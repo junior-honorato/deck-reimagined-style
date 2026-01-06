@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { SlideNavigation } from "./SlideNavigation";
+import { ExportButton } from "./ExportButton";
 import { SlideCover } from "./slides/SlideCover";
 import { SlideObjetivo } from "./slides/SlideObjetivo";
 import { SlideParticipantes } from "./slides/SlideParticipantes";
@@ -104,6 +105,8 @@ export const PresentationViewer = () => {
         onNext={goToNext}
         onGoToSlide={goToSlide}
       />
+      
+      <ExportButton />
     </div>
   );
 };
